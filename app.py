@@ -29,7 +29,7 @@ class Square(Polygon):
         super().__init__(Square.sides, length)
 
     def area(self):
-        return Square.sides*self.side_length
+        return self.side_length**2
 
     def __str__(self):
         return f'I am a {Square.sides} sided polygon with area {Square.sides*self.side_length}'
